@@ -29,10 +29,10 @@ export function Hero() {
       <div className="relative z-10 mt-12 flex justify-center md:mt-0">
         <div className="relative aspect-[520/480] w-full max-w-[520px] overflow-hidden rounded-[26px] border-[6px] border-cream shadow-[0_16px_40px_rgba(43,35,32,0.18)]">
           <Image
-            src="/facepaint1.jpg"
-            alt="Happy child with heart and butterfly face paint"
+            src="/facepaint/pink-hearts.jpg"
+            alt="Happy girl with glittery pink hearts painted on her forehead and cheek"
             fill
-            priority
+            preload
             sizes="(min-width: 768px) 520px, 90vw"
             className="object-cover"
           />

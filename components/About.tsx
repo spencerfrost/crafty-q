@@ -15,13 +15,13 @@ export function About() {
       className="scroll-mt-[84px] bg-plum px-6 py-[100px] md:px-14"
     >
       <div className="grid grid-cols-1 items-center gap-14 md:grid-cols-[0.85fr_1.15fr]">
-        <div className="relative h-[460px] w-full overflow-hidden rounded-[26px] border-[6px] border-cream">
+        <div className="relative h-[460px] w-[460px] overflow-hidden rounded-full border-[6px] border-cream">
           <Image
-            src="/placeholders/about.svg"
-            alt="Q, the artist behind Crafty Q Facepainting, at work"
+            src="/roz.png"
+            alt="Q, the artist behind Crafty Q Facepainting, wearing a monarch butterfly face paint design"
             fill
             sizes="(min-width: 768px) 40vw, 100vw"
-            className="object-cover"
+            className="rounded-full object-cover"
           />
         </div>
 

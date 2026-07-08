@@ -16,50 +16,74 @@ const GALLERY: { id: string; category: Category; src: string; alt: string }[] = 
   {
     id: "p1",
     category: "Birthdays",
-    src: "/facepaint4.jpg",
-    alt: "Child with pink and yellow petal face paint around the eyes",
+    src: "/facepaint/pink-hearts.jpg",
+    alt: "Girl with glittery pink hearts painted on her forehead and cheek",
   },
   {
     id: "p2",
-    category: "Festivals",
-    src: "/facepaint3.jpg",
-    alt: "Child with a glittery pink and gold masquerade-style face paint design",
+    category: "FX & Seasonal",
+    src: "/facepaint/red-fox.jpg",
+    alt: "Boy with a red and white fox face paint design",
   },
   {
     id: "p3",
-    category: "FX & Seasonal",
-    src: "/facepaint2.jpg",
-    alt: "Child with a red and white fox face paint design",
+    category: "Festivals",
+    src: "/facepaint/teal-butterfly.jpg",
+    alt: "Boy with a teal glitter butterfly painted across his eyes",
   },
   {
     id: "p4",
     category: "Birthdays",
-    src: "/facepaint1.jpg",
-    alt: "Child with pink heart and butterfly face paint",
+    src: "/facepaint/unicorn.jpg",
+    alt: "Girl with a golden unicorn horn and pink swirl face paint",
   },
   {
     id: "p5",
-    category: "Festivals",
-    src: "/placeholders/gallery.svg",
-    alt: "Festivals face painting example",
+    category: "FX & Seasonal",
+    src: "/facepaint/spider-webs.jpg",
+    alt: "Boy with red spider web face paint across his eyes",
   },
   {
     id: "p6",
-    category: "FX & Seasonal",
-    src: "/placeholders/gallery.svg",
-    alt: "FX & Seasonal face painting example",
+    category: "Festivals",
+    src: "/facepaint/floral-eye.jpg",
+    alt: "Girl with pastel blue and pink flowers painted around her eye",
   },
   {
     id: "p7",
     category: "Birthdays",
-    src: "/placeholders/gallery.svg",
-    alt: "Birthdays face painting example",
+    src: "/facepaint/party-group.jpg",
+    alt: "Three kids at a party showing off dragon, clown, and unicorn face paint",
   },
   {
     id: "p8",
+    category: "FX & Seasonal",
+    src: "/facepaint/green-dragon.jpg",
+    alt: "Boy with a green dragon face paint design",
+  },
+  {
+    id: "p9",
     category: "Festivals",
-    src: "/placeholders/gallery.svg",
-    alt: "Festivals face painting example",
+    src: "/facepaint/fairy-leaves.jpg",
+    alt: "Woman with green fairy leaves and vines painted around her eyes",
+  },
+  {
+    id: "p10",
+    category: "Birthdays",
+    src: "/facepaint/unicorn-profile.jpg",
+    alt: "Profile of a girl with golden unicorn horn and pink swirl face paint",
+  },
+  {
+    id: "p11",
+    category: "FX & Seasonal",
+    src: "/facepaint/turtle.jpg",
+    alt: "Boy with a green turtle painted on his cheek",
+  },
+  {
+    id: "p12",
+    category: "Festivals",
+    src: "/facepaint/blue-wave.jpg",
+    alt: "Woman with a sparkling blue wave design painted across her eyes",
   },
 ];
 
@@ -72,6 +96,7 @@ export function Portfolio() {
   const filtered = GALLERY.filter(
     (item) => activeCategory === "All" || item.category === activeCategory,
   );
+  const lightboxItem = GALLERY.find((item) => item.id === lightboxId);
 
   return (
     <section
@@ -131,7 +156,7 @@ export function Portfolio() {
         ))}
       </div>
 
-      {lightboxId && (
+      {lightboxItem && (
         <div
           className="fixed inset-0 z-30 flex items-center justify-center bg-black/80 p-6"
           onClick={() => setLightboxId(null)}
@@ -150,11 +175,8 @@ export function Portfolio() {
             </button>
             <div className="relative aspect-square w-full overflow-hidden rounded-[18px]">
               <Image
-                src={
-                  GALLERY.find((g) => g.id === lightboxId)?.src ??
-                  "/placeholders/gallery.svg"
-                }
-                alt={GALLERY.find((g) => g.id === lightboxId)?.alt ?? ""}
+                src={lightboxItem.src}
+                alt={lightboxItem.alt}
                 fill
                 sizes="100vw"
                 className="object-cover"

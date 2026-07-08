@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 
 const LINKS = [
@@ -16,12 +17,25 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-20 border-b border-charcoal/8 bg-cream">
       <div className="flex h-[84px] items-center justify-between px-6 md:px-14">
-        <a href="#home" className="flex flex-col leading-none" onClick={() => setOpen(false)}>
-          <span className="font-display text-2xl font-bold text-plum md:text-[26px]">
-            Crafty Q
-          </span>
-          <span className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-indigo">
-            Facepainting
+        <a
+          href="#home"
+          className="flex items-center gap-3 leading-none"
+          onClick={() => setOpen(false)}
+        >
+          <Image
+            src="/crafty-q-logo.png"
+            alt=""
+            width={64}
+            height={66}
+            className="h-14 w-auto md:h-16"
+          />
+          <span className="flex flex-col">
+            <span className="font-display text-2xl font-bold text-plum md:text-[26px]">
+              Crafty Q
+            </span>
+            <span className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-indigo">
+              Facepainting
+            </span>
           </span>
         </a>
 
