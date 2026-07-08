@@ -15,16 +15,16 @@ export function Services() {
 
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
         <div className="flex flex-col">
-          <h3 className="mb-5 font-display text-[22px] font-semibold text-purple">
+          <h3 className="mb-5 font-display text-[22px] font-semibold text-plum">
             Private &amp; Birthday Parties
           </h3>
           <div className="flex flex-col gap-5">
-            <div className="rounded-[20px] border-2 border-yellow bg-white p-7">
+            <div className="rounded-[20px] border-2 border-blush bg-white p-7">
               <div className="mb-[10px] flex items-baseline justify-between gap-4">
                 <span className="font-display text-xl font-semibold text-charcoal">
                   Basic Package
                 </span>
-                <span className="text-[17px] font-extrabold text-pink">
+                <span className="text-[17px] font-extrabold text-indigo">
                   Starting at $75/hr
                 </span>
               </div>
@@ -34,15 +34,15 @@ export function Services() {
               </p>
             </div>
 
-            <div className="relative rounded-[20px] border-2 border-pink bg-white p-7">
-              <span className="absolute -top-[13px] right-6 rounded-full bg-pink px-3 py-[5px] text-[11px] font-extrabold tracking-[0.05em] text-cream uppercase">
+            <div className="relative rounded-[20px] border-2 border-indigo bg-white p-7">
+              <span className="absolute -top-[13px] right-6 rounded-full bg-indigo px-3 py-[5px] text-[11px] font-extrabold tracking-[0.05em] text-cream uppercase">
                 Most Popular
               </span>
               <div className="mb-[10px] flex items-baseline justify-between gap-4">
                 <span className="font-display text-xl font-semibold text-charcoal">
                   Deluxe Package
                 </span>
-                <span className="text-[17px] font-extrabold text-pink">
+                <span className="text-[17px] font-extrabold text-indigo">
                   Starting at $120/hr
                 </span>
               </div>
@@ -55,7 +55,7 @@ export function Services() {
         </div>
 
         <div className="flex flex-col">
-          <h3 className="mb-5 font-display text-[22px] font-semibold text-teal">
+          <h3 className="mb-5 font-display text-[22px] font-semibold text-blush">
             Corporate &amp; Community Events
           </h3>
           <div className="flex flex-1 flex-col justify-between rounded-[20px] bg-charcoal p-9">
@@ -70,12 +70,12 @@ export function Services() {
               </p>
             </div>
             <div>
-              <div className="mb-4 text-[19px] font-extrabold text-yellow">
+              <div className="mb-4 text-[19px] font-extrabold text-blush">
                 Contact for Custom Quote
               </div>
               <a
                 href="#contact"
-                className="inline-flex items-center rounded-full bg-yellow px-[30px] py-[14px] text-[15px] font-extrabold text-charcoal"
+                className="inline-flex items-center rounded-full bg-blush px-[30px] py-[14px] text-[15px] font-extrabold text-charcoal"
               >
                 Get a Quote
               </a>

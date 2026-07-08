@@ -12,7 +12,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="scroll-mt-[84px] bg-purple px-6 py-[100px] md:px-14"
+      className="scroll-mt-[84px] bg-plum px-6 py-[100px] md:px-14"
     >
       <div className="grid grid-cols-1 items-center gap-14 md:grid-cols-[0.85fr_1.15fr]">
         <div className="relative h-[460px] w-full overflow-hidden rounded-[26px] border-[6px] border-cream">
@@ -29,7 +29,7 @@ export function About() {
           <h2 className="mb-[18px] font-display text-[38px] font-semibold text-cream">
             Meet Q
           </h2>
-          <p className="mb-[30px] max-w-[560px] text-[17px] leading-[1.7] text-body-purple">
+          <p className="mb-[30px] max-w-[560px] text-[17px] leading-[1.7] text-body-plum">
             Hi, I&apos;m Q — the artist behind Crafty Q Facepainting. For
             over 8 years I&apos;ve been turning cheeks into canvases across
             London, Ontario, from backyard birthday parties to city
@@ -43,7 +43,7 @@ export function About() {
                 key={cert}
                 className="flex items-center gap-3 rounded-[14px] bg-cream/10 px-4 py-[14px]"
               >
-                <span className="flex h-[30px] w-[30px] flex-none items-center justify-center rounded-full bg-yellow">
+                <span className="flex h-[30px] w-[30px] flex-none items-center justify-center rounded-full bg-blush">
                   <svg
                     width="16"
                     height="16"

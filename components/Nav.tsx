@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "@/components/ui/Button";
 
 const LINKS = [
   { label: "Home", href: "#home" },
@@ -16,10 +17,10 @@ export function Nav() {
     <header className="sticky top-0 z-20 border-b border-charcoal/8 bg-cream">
       <div className="flex h-[84px] items-center justify-between px-6 md:px-14">
         <a href="#home" className="flex flex-col leading-none" onClick={() => setOpen(false)}>
-          <span className="font-display text-2xl font-bold text-purple md:text-[26px]">
+          <span className="font-display text-2xl font-bold text-plum md:text-[26px]">
             Crafty Q
           </span>
-          <span className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-pink">
+          <span className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-indigo">
             Facepainting
           </span>
         </a>
@@ -34,12 +35,7 @@ export function Nav() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            className="inline-flex items-center rounded-full bg-pink px-7 py-3 text-[15px] font-bold text-cream shadow-[0_4px_0_#B7304F]"
-          >
-            Book Your Event
-          </a>
+          <Button href="#contact">Book Your Event</Button>
         </div>
 
         <button
@@ -71,13 +67,13 @@ export function Nav() {
               {link.label}
             </a>
           ))}
-          <a
+          <Button
             href="#contact"
             onClick={() => setOpen(false)}
-            className="mt-2 inline-flex items-center justify-center rounded-full bg-pink px-7 py-3 text-[15px] font-bold text-cream shadow-[0_4px_0_#B7304F]"
+            className="mt-2"
           >
             Book Your Event
-          </a>
+          </Button>
         </div>
       )}
     </header>

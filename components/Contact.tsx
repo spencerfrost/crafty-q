@@ -2,11 +2,10 @@
 
 import { useActionState } from "react";
 import { submitBookingRequest, type BookingFormState } from "@/app/actions";
+import { Button } from "@/components/ui/Button";
+import { Input, Select, Textarea } from "@/components/ui/Field";
 
 const initialState: BookingFormState = { status: "idle", message: "" };
-
-const inputClass =
-  "rounded-[10px] border-2 border-input-border bg-input-bg px-[14px] py-3 text-[15px] font-body text-charcoal focus:shadow-[0_0_0_3px_rgba(0,0,0,0.08)] focus:outline-none";
 
 export function Contact() {
   const [state, formAction, pending] = useActionState(
@@ -34,37 +33,17 @@ export function Contact() {
           action={formAction}
           className="grid grid-cols-1 gap-4 rounded-[24px] border-2 border-charcoal/8 bg-white p-9 sm:grid-cols-2"
         >
-          <input
-            name="fullName"
-            placeholder="Full Name"
-            required
-            className={inputClass}
-          />
-          <input
-            name="email"
-            type="email"
-            placeholder="Email"
-            required
-            className={inputClass}
-          />
-          <input
-            name="eventDate"
-            type="date"
-            required
-            className={inputClass}
-          />
-          <input name="startTime" type="time" className={inputClass} />
-          <input
+          <Input name="fullName" placeholder="Full Name" required />
+          <Input name="email" type="email" placeholder="Email" required />
+          <Input name="eventDate" type="date" required />
+          <Input name="startTime" type="time" />
+          <Input
             name="eventLocation"
             placeholder="Event Location (London & area)"
             required
-            className={`sm:col-span-2 ${inputClass}`}
+            className="sm:col-span-2"
           />
-          <select
-            name="eventType"
-            defaultValue=""
-            className={inputClass}
-          >
+          <Select name="eventType" defaultValue="">
             <option value="" disabled>
               Event Type
             </option>
@@ -72,35 +51,35 @@ export function Contact() {
             <option value="Corporate">Corporate</option>
             <option value="Festival">Festival</option>
             <option value="Other">Other</option>
-          </select>
-          <input
+          </Select>
+          <Input
             name="estimatedGuests"
             type="number"
             min={0}
             placeholder="Estimated Guests"
-            className={inputClass}
           />
-          <textarea
+          <Textarea
             name="message"
             rows={4}
             placeholder="Message / Special Requests"
-            className={`resize-y sm:col-span-2 ${inputClass}`}
+            className="sm:col-span-2"
           />
 
-          <button
+          <Button
             type="submit"
+            variant="block"
             disabled={pending}
-            className="rounded-xl bg-pink px-4 py-4 text-base font-extrabold text-cream shadow-[0_5px_0_#B7304F] disabled:opacity-70 sm:col-span-2"
+            className="sm:col-span-2"
           >
             {pending ? "Sending…" : "Send Booking Request"}
-          </button>
+          </Button>
 
           {state.message && (
             <p
               role="status"
               aria-live="polite"
               className={`text-sm font-bold sm:col-span-2 ${
-                state.status === "success" ? "text-teal" : "text-pink"
+                state.status === "success" ? "text-blush" : "text-indigo"
               }`}
             >
               {state.message}

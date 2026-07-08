@@ -97,8 +97,8 @@ export function Portfolio() {
               onClick={() => setActiveCategory(cat)}
               className={`rounded-full border-2 px-[22px] py-[10px] text-[14px] font-bold ${
                 isActive
-                  ? "border-pink bg-pink text-cream"
-                  : "border-[#7A6A9E] bg-transparent text-body-dark"
+                  ? "border-indigo bg-indigo text-cream"
+                  : "border-[#8A6685] bg-transparent text-body-dark"
               }`}
             >
               {cat}
@@ -124,7 +124,7 @@ export function Portfolio() {
                 className="object-cover"
               />
             </span>
-            <span className="text-center text-[13px] font-bold text-yellow">
+            <span className="text-center text-[13px] font-bold text-blush">
               {item.category}
             </span>
           </button>
