@@ -30,7 +30,7 @@ export function About() {
             Meet Q
           </h2>
           <p className="mb-[30px] max-w-[560px] text-[17px] leading-[1.7] text-body-plum">
-            Hi, I&apos;m Q — the artist behind Crafty Q Facepainting. For
+            Hi, I&apos;m Q, the artist behind Crafty Q Facepainting. For
             over 8 years I&apos;ve been turning cheeks into canvases across
             London, Ontario, from backyard birthday parties to city
             festivals. My mission: make every event a little more magical,
