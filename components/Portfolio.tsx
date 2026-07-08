@@ -178,7 +178,7 @@ export function Portfolio() {
                 src={lightboxItem.src}
                 alt={lightboxItem.alt}
                 fill
-                sizes="100vw"
+                sizes="(min-width: 720px) 672px, 100vw"
                 className="object-cover"
               />
             </div>
