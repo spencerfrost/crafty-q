@@ -3,13 +3,12 @@
 @theme {
   --color-cream: #fff8ee;
   --color-charcoal: #2b2320;
-  --color-pink: #e8446b;
-  --color-pink-shadow: #b7304f;
-  --color-teal: #2e9e9e;
-  --color-yellow: #f5b942;
-  --color-purple: #5b4b8a;
+  --color-indigo: #4c3fa0;
+  --color-indigo-shadow: #362e78;
+  --color-blush: #e8b4c6;
+  --color-plum: #5b2a56;
   --color-body-warm: #5a4f49;
-  --color-body-purple: #e6dff7;
+  --color-body-plum: #f0dce8;
   --color-body-dark: #c9beb6;
   --color-input-border: #eee3d3;
   --color-input-bg: #fffdf9;
