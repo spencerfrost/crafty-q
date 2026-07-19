@@ -69,9 +69,6 @@ export function Portfolio() {
                 style={{ objectPosition: item.position }}
               />
             </span>
-            <span className="text-center text-[13px] font-bold text-blush">
-              {item.category}
-            </span>
           </button>
         ))}
       </div>
