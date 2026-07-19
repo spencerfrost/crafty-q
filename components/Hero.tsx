@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative scroll-mt-[84px] overflow-hidden bg-cream px-6 pt-16 pb-20 md:grid md:grid-cols-[1.1fr_0.9fr] md:items-center md:gap-12 md:px-14 md:pt-20 md:pb-[110px]"
+      className="relative scroll-mt-nav overflow-hidden bg-cream px-6 pt-16 pb-20 md:grid md:grid-cols-[1.1fr_0.9fr] md:items-center md:gap-12 md:px-14 md:pt-20 md:pb-[110px]"
     >
       <div className="pointer-events-none absolute -top-[60px] -right-[60px] h-[260px] w-[260px] rounded-full bg-blush/35" />
       <div className="pointer-events-none absolute bottom-[20px] left-[40%] h-[90px] w-[90px] rounded-full bg-indigo/25" />

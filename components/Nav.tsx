@@ -16,7 +16,7 @@ export function Nav() {
 
   return (
     <header className="sticky top-0 z-20 border-b border-charcoal/8 bg-cream">
-      <div className="flex h-[84px] items-center justify-between px-6 md:px-14">
+      <div className="flex h-nav items-center justify-between px-6 md:px-14">
         <a
           href="#home"
           className="flex items-center gap-3 leading-none"
