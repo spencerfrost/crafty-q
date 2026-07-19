@@ -7,11 +7,15 @@
   --color-indigo-shadow: #362e78;
   --color-blush: #e8b4c6;
   --color-plum: #5b2a56;
+  --color-mauve: #8a6685;
   --color-body-warm: #5a4f49;
   --color-body-plum: #f0dce8;
   --color-body-dark: #c9beb6;
   --color-input-border: #eee3d3;
   --color-input-bg: #fffdf9;
+
+  /* Nav bar height — sections use scroll-mt-nav so anchors land below it */
+  --spacing-nav: 84px;
 
   --font-display: var(--font-fredoka);
   --font-body: var(--font-nunito);
