@@ -17,6 +17,8 @@ export const CONTACT = {
   messages: {
     missingFields:
       "Please fill in your name, email, event date, and location.",
+    sendFailed:
+      "Something went wrong sending your request. Please try again, or email us directly.",
     success: `Thanks! Your booking request is in — we'll get back to you within ${SITE.responseTime}.`,
   },
 };
