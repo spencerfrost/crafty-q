@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/Button";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { SITE } from "@/data/site";
 import { HERO } from "@/data/hero";
 
@@ -29,14 +29,7 @@ export function Hero() {
 
       <div className="relative z-10 mt-12 flex justify-center md:mt-0">
         <div className="relative aspect-[520/480] w-full max-w-[520px] overflow-hidden rounded-[26px] border-[6px] border-cream shadow-[0_16px_40px_rgba(43,35,32,0.18)]">
-          <Image
-            src={HERO.image.src}
-            alt={HERO.image.alt}
-            fill
-            preload
-            sizes="(min-width: 768px) 520px, 90vw"
-            className="object-cover"
-          />
+          <HeroSlideshow slides={HERO.slides} />
         </div>
       </div>
     </section>
