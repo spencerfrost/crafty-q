@@ -1,78 +1,69 @@
 import { Section } from "@/components/ui/Section";
+import { PARTY_PACKAGES, SERVICES } from "@/data/services";
 
 export function Services() {
   return (
     <Section
       id="services"
-      title="Services & Packages"
-      subtitle="From backyard birthdays to citywide festivals"
+      title={SERVICES.title}
+      subtitle={SERVICES.subtitle}
     >
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
         <div className="flex flex-col">
           <h3 className="mb-5 font-display text-[22px] font-semibold text-plum">
-            Private &amp; Birthday Parties
+            {SERVICES.partyHeading}
           </h3>
           <div className="flex flex-col gap-5">
-            <div className="rounded-[20px] border-2 border-blush bg-white p-7">
-              <div className="mb-[10px] flex items-baseline justify-between gap-4">
-                <span className="font-display text-xl font-semibold text-charcoal">
-                  Basic Package
-                </span>
-                <span className="text-[17px] font-extrabold text-indigo">
-                  Starting at $75/hr
-                </span>
+            {PARTY_PACKAGES.map((pkg) => (
+              <div
+                key={pkg.name}
+                className={`relative rounded-[20px] border-2 bg-white p-7 ${
+                  pkg.popular ? "border-indigo" : "border-blush"
+                }`}
+              >
+                {pkg.popular && (
+                  <span className="absolute -top-[13px] right-6 rounded-full bg-indigo px-3 py-[5px] text-[11px] font-extrabold tracking-[0.05em] text-cream uppercase">
+                    Most Popular
+                  </span>
+                )}
+                <div className="mb-[10px] flex items-baseline justify-between gap-4">
+                  <span className="font-display text-xl font-semibold text-charcoal">
+                    {pkg.name}
+                  </span>
+                  <span className="text-[17px] font-extrabold text-indigo">
+                    {pkg.price}
+                  </span>
+                </div>
+                <p className="text-[15px] leading-[1.6] text-body-warm">
+                  {pkg.description}
+                </p>
               </div>
-              <p className="text-[15px] leading-[1.6] text-body-warm">
-                Quick, fun designs — cheek art and simple characters, finished with a splash of glitter. Great for large groups who want everyone painted fast.
-              </p>
-            </div>
-
-            <div className="relative rounded-[20px] border-2 border-indigo bg-white p-7">
-              <span className="absolute -top-[13px] right-6 rounded-full bg-indigo px-3 py-[5px] text-[11px] font-extrabold tracking-[0.05em] text-cream uppercase">
-                Most Popular
-              </span>
-              <div className="mb-[10px] flex items-baseline justify-between gap-4">
-                <span className="font-display text-xl font-semibold text-charcoal">
-                  Deluxe Package
-                </span>
-                <span className="text-[17px] font-extrabold text-indigo">
-                  Starting at $120/hr
-                </span>
-              </div>
-              <p className="text-[15px] leading-[1.6] text-body-warm">
-                Full-face masterpieces with glitter, gems, and intricate
-                detail work — the showstopper option. This package may
-                include fairy costume rentals, &ldquo;let&apos;s play a
-                game&rdquo;, and cupcake options!
-              </p>
-            </div>
+            ))}
           </div>
         </div>
 
         <div className="flex flex-col">
           <h3 className="mb-5 font-display text-[22px] font-semibold text-plum">
-            Corporate &amp; Community Events
+            {SERVICES.corporateHeading}
           </h3>
           <div className="flex flex-1 flex-col justify-between rounded-[20px] bg-charcoal p-9">
             <div>
               <span className="mb-[14px] block font-display text-[22px] font-semibold text-cream">
-                Festivals, Grand Openings &amp; Picnics
+                {SERVICES.corporate.title}
               </span>
               <p className="mb-6 text-[15px] leading-[1.7] text-body-dark">
-                High-volume booth service with hourly rate structures
-                tailored to your event size, crowd flow, and duration.
-                Let&apos;s build a plan that fits your budget.
+                {SERVICES.corporate.description}
               </p>
             </div>
             <div>
               <div className="mb-4 text-[19px] font-extrabold text-blush">
-                Contact for Custom Quote
+                {SERVICES.corporate.note}
               </div>
               <a
                 href="#contact"
                 className="inline-flex items-center rounded-full bg-blush px-[30px] py-[14px] text-[15px] font-extrabold text-charcoal"
               >
-                Get a Quote
+                {SERVICES.corporate.ctaLabel}
               </a>
             </div>
           </div>

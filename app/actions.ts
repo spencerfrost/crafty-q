@@ -1,5 +1,7 @@
 "use server";
 
+import { CONTACT } from "@/data/contact";
+
 export type BookingFormState = {
   status: "idle" | "success" | "error";
   message: string;
@@ -17,7 +19,7 @@ export async function submitBookingRequest(
   if (!fullName || !email || !eventDate || !eventLocation) {
     return {
       status: "error",
-      message: "Please fill in your name, email, event date, and location.",
+      message: CONTACT.messages.missingFields,
     };
   }
 
@@ -37,7 +39,6 @@ export async function submitBookingRequest(
 
   return {
     status: "success",
-    message:
-      "Thanks! Your booking request is in — we'll get back to you within 24 hours.",
+    message: CONTACT.messages.success,
   };
 }

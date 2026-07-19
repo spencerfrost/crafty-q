@@ -3,13 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
-
-const LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-];
+import { NAV_LINKS, SITE } from "@/data/site";
 
 export function Nav() {
   const [open, setOpen] = useState(false);
@@ -31,16 +25,16 @@ export function Nav() {
           />
           <span className="flex flex-col">
             <span className="font-display text-2xl font-bold text-plum md:text-[26px]">
-              Crafty Q
+              {SITE.shortName}
             </span>
             <span className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-indigo">
-              Face Painting
+              {SITE.tagline}
             </span>
           </span>
         </a>
 
         <div className="hidden items-center gap-9 md:flex">
-          {LINKS.map((link) => (
+          {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -49,7 +43,7 @@ export function Nav() {
               {link.label}
             </a>
           ))}
-          <Button href="#contact">Book Your Event</Button>
+          <Button href="#contact">{SITE.bookingCta}</Button>
         </div>
 
         <button
@@ -71,7 +65,7 @@ export function Nav() {
 
       {open && (
         <div className="flex flex-col gap-1 border-t border-charcoal/8 bg-cream px-6 pb-6 pt-2 md:hidden">
-          {LINKS.map((link) => (
+          {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -86,7 +80,7 @@ export function Nav() {
             onClick={() => setOpen(false)}
             className="mt-2"
           >
-            Book Your Event
+            {SITE.bookingCta}
           </Button>
         </div>
       )}
