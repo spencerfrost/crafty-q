@@ -5,7 +5,8 @@ const CERTIFICATIONS = [
   "Hypoallergenic & Washable Formulas",
   "Certified Face Painting Training",
   "Strict Sanitization Protocols",
-  "Fully Insured (Business Liability)",
+  "Education in Child Services & Human Development",
+  "Recreation & Leisure Studies",
 ];
 
 export function About() {
@@ -18,7 +19,7 @@ export function About() {
         <div className="relative h-[460px] w-[460px] overflow-hidden rounded-full border-[6px] border-cream">
           <Image
             src="/roz.png"
-            alt="Q, the artist behind Crafty Q Facepainting, wearing a monarch butterfly face paint design"
+            alt="Roz, the artist behind Crafty Q Face Painting, wearing a monarch butterfly face paint design"
             fill
             sizes="(min-width: 768px) 40vw, 100vw"
             className="rounded-full object-cover"
@@ -27,14 +28,14 @@ export function About() {
 
         <div>
           <h2 className="mb-[18px] font-display text-[38px] font-semibold text-cream">
-            Meet Q
+            Meet Roz
           </h2>
           <p className="mb-[30px] max-w-[560px] text-[17px] leading-[1.7] text-body-plum">
-            Hi, I&apos;m Q, the artist behind Crafty Q Facepainting. For
-            over 8 years I&apos;ve been turning cheeks into canvases across
-            London, Ontario, from backyard birthday parties to city
-            festivals. My mission: make every event a little more magical,
-            one brushstroke at a time.
+            Hi, I&apos;m Roz, the artist behind Crafty Q Face Painting. For
+            over 20 years I&apos;ve been turning faces into canvases across
+            London, Ontario, and surrounding areas. From backyard birthday
+            parties to city festivals. My mission: make every event a
+            little more magical, one brushstroke at a time.
           </p>
 
           <div className="grid grid-cols-1 gap-[14px] sm:grid-cols-2">

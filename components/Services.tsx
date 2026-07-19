@@ -29,8 +29,7 @@ export function Services() {
                 </span>
               </div>
               <p className="text-[15px] leading-[1.6] text-body-warm">
-                Quick, fun designs — cheek art and simple characters. Great
-                for large groups who want everyone painted fast.
+                Quick, fun designs — cheek art and simple characters, finished with a splash of glitter. Great for large groups who want everyone painted fast.
               </p>
             </div>
 
@@ -48,14 +47,16 @@ export function Services() {
               </div>
               <p className="text-[15px] leading-[1.6] text-body-warm">
                 Full-face masterpieces with glitter, gems, and intricate
-                detail work — the showstopper option.
+                detail work — the showstopper option. This package may
+                include fairy costume rentals, &ldquo;let&apos;s play a
+                game&rdquo;, and cupcake options!
               </p>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col">
-          <h3 className="mb-5 font-display text-[22px] font-semibold text-blush">
+          <h3 className="mb-5 font-display text-[22px] font-semibold text-plum">
             Corporate &amp; Community Events
           </h3>
           <div className="flex flex-1 flex-col justify-between rounded-[20px] bg-charcoal p-9">

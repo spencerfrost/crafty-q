@@ -19,7 +19,7 @@ export function Hero() {
         </h1>
         <p className="mb-[34px] max-w-[520px] text-[19px] leading-[1.6] text-body-warm">
           Hand-painted smiles for birthday parties, festivals, and corporate
-          events — safe, vibrant, and unforgettable.
+          events. Colorful creations for all ages!
         </p>
         <Button href="#contact" size="lg">
           Book Your Event
