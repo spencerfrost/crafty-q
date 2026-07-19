@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Section } from "@/components/ui/Section";
 
 const CERTIFICATIONS = [
   "FDA-Compliant, Cosmetic-Grade Paints",
@@ -11,10 +12,7 @@ const CERTIFICATIONS = [
 
 export function About() {
   return (
-    <section
-      id="about"
-      className="scroll-mt-[84px] bg-plum px-6 py-[100px] md:px-14"
-    >
+    <Section id="about" tone="plum">
       <div className="grid grid-cols-1 items-center gap-14 md:grid-cols-[0.85fr_1.15fr]">
         <div className="relative h-[460px] w-[460px] overflow-hidden rounded-full border-[6px] border-cream">
           <Image
@@ -50,11 +48,12 @@ export function About() {
                     height="16"
                     viewBox="0 0 16 16"
                     aria-hidden="true"
+                    className="text-charcoal"
                   >
                     <polyline
                       points="2,8 6,12 14,3"
                       fill="none"
-                      stroke="#2B2320"
+                      stroke="currentColor"
                       strokeWidth="2.4"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -69,6 +68,6 @@ export function About() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

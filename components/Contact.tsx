@@ -4,6 +4,7 @@ import { useActionState } from "react";
 import { submitBookingRequest, type BookingFormState } from "@/app/actions";
 import { Button } from "@/components/ui/Button";
 import { Input, Select, Textarea } from "@/components/ui/Field";
+import { Section } from "@/components/ui/Section";
 
 const initialState: BookingFormState = { status: "idle", message: "" };
 
@@ -14,10 +15,7 @@ export function Contact() {
   );
 
   return (
-    <section
-      id="contact"
-      className="scroll-mt-[84px] bg-cream px-6 py-[100px] md:px-14"
-    >
+    <Section id="contact">
       <div className="grid grid-cols-1 gap-[60px] md:grid-cols-[0.9fr_1.1fr]">
         <div>
           <h2 className="mb-4 font-display text-[40px] font-semibold text-charcoal">
@@ -87,6 +85,6 @@ export function Contact() {
           )}
         </form>
       </div>
-    </section>
+    </Section>
   );
 }

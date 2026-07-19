@@ -1,18 +1,12 @@
+import { Section } from "@/components/ui/Section";
+
 export function Services() {
   return (
-    <section
+    <Section
       id="services"
-      className="scroll-mt-[84px] bg-cream px-6 py-[100px] md:px-14"
+      title="Services & Packages"
+      subtitle="From backyard birthdays to citywide festivals"
     >
-      <div className="mb-14 text-center">
-        <h2 className="mb-3 font-display text-[40px] font-semibold text-charcoal">
-          Services &amp; Packages
-        </h2>
-        <p className="text-[17px] text-body-warm">
-          From backyard birthdays to citywide festivals
-        </p>
-      </div>
-
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
         <div className="flex flex-col">
           <h3 className="mb-5 font-display text-[22px] font-semibold text-plum">
@@ -84,6 +78,6 @@ export function Services() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
