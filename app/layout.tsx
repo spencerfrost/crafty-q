@@ -15,7 +15,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Crafty Q Facepainting | London, Ontario",
+  title: "Crafty Q Face Painting | London, Ontario",
   description:
     "Hand-painted smiles for birthday parties, festivals, and corporate events in London, Ontario — safe, vibrant, and unforgettable.",
 };

@@ -15,7 +15,7 @@ export function Hero() {
           London, Ontario &amp; Area
         </span>
         <h1 className="mb-[22px] max-w-[560px] font-display text-[38px] leading-[1.1] font-bold text-charcoal md:text-[56px] md:leading-[1.06]">
-          Bringing Magic &amp; Color to Your Event with Crafty Q Facepainting
+          Bringing Magic &amp; Color to Your Event with Crafty Q Face Painting
         </h1>
         <p className="mb-[34px] max-w-[520px] text-[19px] leading-[1.6] text-body-warm">
           Hand-painted smiles for birthday parties, festivals, and corporate

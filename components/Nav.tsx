@@ -34,7 +34,7 @@ export function Nav() {
               Crafty Q
             </span>
             <span className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-indigo">
-              Facepainting
+              Face Painting
             </span>
           </span>
         </a>

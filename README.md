@@ -1,6 +1,6 @@
-# Crafty Q Facepainting
+# Crafty Q Face Painting
 
-Single-page marketing site for Crafty Q Facepainting (London, Ontario). Showcases portfolio work, outlines birthday vs. corporate service packages, builds trust via certifications, and captures booking inquiries through a contact form.
+Single-page marketing site for Crafty Q Face Painting (London, Ontario). Showcases portfolio work, outlines birthday vs. corporate service packages, builds trust via certifications, and captures booking inquiries through a contact form.
 
 Built with [Next.js](https://nextjs.org) (App Router) and Tailwind CSS.
 
