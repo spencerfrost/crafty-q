@@ -7,7 +7,7 @@ const SLIDE_IDS = ["p1", "p5", "p9", "p3", "p6", "p7"];
 export const HERO = {
   heading: "Bringing Magic & Color to Your Event with Crafty Q Face Painting",
   description:
-    "Hand-painted smiles for birthday parties, festivals, and corporate events. Colorful creations for all ages!",
+    "Hand-painted smiles for birthday parties, festivals, and corporate events in London, Ontario. Colorful creations for all ages!",
   slides: SLIDE_IDS.map((id): GalleryItem => {
     const item = GALLERY.find((g) => g.id === id);
     if (!item) throw new Error(`Unknown gallery id in hero slides: ${id}`);

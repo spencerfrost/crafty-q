@@ -1,5 +1,6 @@
 export const SITE = {
   name: "Crafty Q Face Painting",
+  url: "https://craftyqfacepainting.ca",
   shortName: "Crafty Q",
   tagline: "Face Painting",
   location: "London, Ontario",
